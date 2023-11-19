@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <!--CSS do BS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- CSS do projeto -->
+    <link rel="stylesheet" href="../indexCSS/registro.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <nav class="navbar" style="background-color: white;">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Control Money FT</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../indexHTML/renda.html">Rendas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../indexHTML/gastos.html">Gastos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../indexHTML/invest.html">Investimentos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../indexHTML/login.html">Desconectar</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </div>
+    <main id="container" class="container-fluid" class="row" >
+        <img src="../Imagens/cifrao.png" alt="logo" class="col-sm-12 col-md-6 col-lg-6">
+        <form name="dados" id="dados" action="" method="post">
+            <fieldset class="col-sm-12 col-md-12 col-lg-12">
+                <legend>Dados pessoais</legend>
+                <div class="box">
+                    <input class="inputbox" type="text"id="mail"name="mail"><br>
+                    <label class="labelbox" for="mail">E-mail</label>
+                </div><br>
+                <div class="box">
+                    <input class="inputbox" type="text"id="nome"name="nome"><br>
+                    <label class="labelbox" for="nome">Nome completo</label>
+                </div> <br>
+                <div class="box">
+                    <input class="inputbox" type="password"id="senha"name="senha"><br>
+                    <label class="labelbox" for="senha">Senha</label>
+                </div><br>
+                <div class="box">
+                    <input class="inputbox" type="password"id="repsenha"name="repsenha"><br>
+                    <label class="labelbox" for="repsenha">Repetir senha</label>
+                </div><br>
+                <div class="box">
+                    <input class="inputbox" type="tel"id="contato"name="contato"><br>
+                    <label class="labelbox" for="contato">Celular</label>
+                </div><br>
+                <div class="box">
+                    <label for="nasc">Data de nascimento</label>
+                    <input class="inputdata" type="date"id="nasc"name="nasc"><br>
+                </div><br>
+                <div class="box">
+                    <input class="inputbox" type="number"id="obj"name="obj"><br>
+                    <label class="labelbox" for="obj">Objetivo financeiro</label>
+                </div><br>
+                <div class="box">
+                    <label  for="meta">Quando gostaria de atingir seu objetivo</label>
+                    <input class="inputdata" type="date"id="meta"name="meta"><br>  
+                </div>
+                <br><input type="submit" name="submit" class="submit">
+            </fieldset>
+        </form>
+    </main>  
+    <!-- Arquivo JS do BS -->  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

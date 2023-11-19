@@ -1,0 +1,106 @@
+#container {
+    background: linear-gradient(to right, #6be26bc0, rgb(209, 209, 255));
+    display: flex;
+    flex-direction: column;
+    min-height: 110vh;
+    font-size: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+}
+
+.tittle {
+    flex: 1 1 20%;
+    min-height: 5vh;
+    text-align: center;
+    padding: 15px 10px;
+    background: url(../Imagens/cifrao.png) no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: center;
+    color: white;
+}
+
+form {
+    flex: 1 1 80%;
+    min-height: 10vh;
+    padding: 10px;
+    text-align: left;
+    color: black;
+}
+
+legend {
+    font-size: 65px;
+    font-style: italic;
+    border: 2px solid blueviolet;
+    background-color: blueviolet;
+    border-radius: 10px;
+    color: white;
+}
+
+fieldset {
+    border: 5px solid blueviolet;
+}
+
+label {
+    font-size: 35px;
+}
+
+.box {
+    position: relative;
+}
+
+.inputdata {
+    border: none;
+    padding: 8px;
+    border-radius: 15px;
+    outline: none;
+    font-size: 30px;
+    text-align: center;
+}
+
+.inputbox {
+    background: none;
+    outline: none;
+    font-size: 45px;
+    width: 100%;
+    letter-spacing: 2px;
+    color: blueviolet;
+    border: none;
+    border-bottom: 5px solid blueviolet;
+    letter-spacing: 2px;
+}
+
+.labelbox {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.inputbox:focus~.labelbox,
+.inputbox:valid {
+    top: -20px;
+    font-size: 30px;
+    color: blue;
+}
+
+.submit {
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 30px;
+    color: blue;
+    background-color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    width: 50%;
+}
+
+.submit:hover {
+    background-color: rgb(138, 238, 128)
+}
